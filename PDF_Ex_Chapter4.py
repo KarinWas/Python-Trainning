@@ -10,7 +10,7 @@ def print_reverse(elements):
 #c
 def len_function(elements):
     count = 0
-    for value in elements:
+    for index in elements:
         count += 1
     return count
 
@@ -90,7 +90,7 @@ def primes(n):
     return (primelist(n))
 
 if __name__== "__main__":
-    '''animals = ['cat', 'dog', 'fish', 'bison']
+    animals = ['cat', 'dog', 'fish', 'bison']
     names = ['Eli', 'Karin', 'Dana', 'Eden']
     print_list(animals)
     print_reverse(animals)
@@ -143,19 +143,15 @@ if __name__== "__main__":
     print (no_sub_list)
 
     #Ex 4.9
-    print(longest_word_in_text("Hello, how was the football match earlier today???"))'''
+    print(longest_word_in_text("Hello, how was the football match earlier today???"))
     
     #Ex 4.10
     print(collatz_as_list(5)) # answer: [5, 16, 8, 4, 2, 1]
-    print(collatz_as_list(4))
-    print(collatz_as_list(3))
-    print(collatz_as_list(2))
-    print(collatz_as_list(1))
-    print(longest_collatz(5))
+    print(longest_collatz(5)) # answer: 3
 
-    '''#Ex 4.11
+    #Ex 4.11
     print(pivots(3, [6, 4, 1, 7]))
     
 
     #Ex 4.12
-    print(primes(12))'''
+    print(primes(12))
