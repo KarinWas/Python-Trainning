@@ -45,4 +45,4 @@ class Main:
         print(my) # answer: The set is: ['cat', 'dog', 'goldfish', 'canary']
         print(my - my2) # answer: ['dog', 'canary']
         print (my.union(my2)) #answer: ['cat', 'dog', 'goldfish', 'canary', 'cow', 'bird', 'fish']
-        print (my.intersection(my2))
+        print (my.intersection(my2)) #answer: ['cat', 'goldfish']
