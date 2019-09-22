@@ -4,11 +4,16 @@ if __name__== "__main__":
     ROWS = 4
     COLS = 3
     X = np.array(np.random.randint(12, size= ROWS*COLS)).reshape(ROWS,COLS)
-    Z = np.zeros((ROWS - 1, 1))
+    Z = np.zeros((ROWS + ROWS - 2, 1))
     print(X)
+    indexZ = 0
     index = 0
     while index < ROWS - 1:
-        Z[index] = distance.pdist(X[[index, index+1], :], 'euclidean')
+        innerIndex = index + 1
+        while innerIndex < ROWS:
+            Z[indexZ] = distance.pdist(X[[index, innerIndex], :], 'euclidean')
+            innerIndex += 1
+            indexZ += 1
         index+=1
     
     print(Z)
