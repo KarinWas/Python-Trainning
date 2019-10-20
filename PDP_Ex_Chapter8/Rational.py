@@ -1,7 +1,10 @@
 class Rational:
     def __init__(self, p, q):
         self.p = p
-        self.q = q
+        if q != 0 :
+            self.q = q
+        else:
+            raise ValueError("The denominator can't be zero!")
     
     def __str__(self):
         return (str(self.p) + "/" + str(self.q))
@@ -57,7 +60,7 @@ class Rational:
         return (self.p / self.q)
     
 if __name__== "__main__":
-    number = Rational(4, 20)
+    '''number = Rational(4, 20)
     number2 = Rational(1, 3)
     print(number)
     print(number.greatest_common_divisor())
@@ -68,4 +71,5 @@ if __name__== "__main__":
     print(number3.__div__(number))
     number4 = Rational(2,6)
     print(number == number4)
-    print(number2.__float__())
+    print(number2.__float__())'''
+    number = Rational(0, 0)
